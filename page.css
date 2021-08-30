@@ -1,12 +1,12 @@
 body{
     font-size: 67.5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #0061cf url(./assets/sea.jpg) no-repeat fixed top center;
+    background: rgb(0, 83, 139) url(./assets/sea.jpg)  no-repeat fixed top center ;
     padding: 0;
     margin: 0;
     -webkit-background-size: 100% 100%;
     -moz-background-size:100% 100%;
-    background-size: 100% 50%;
+    background-size: 100% 20%;
     -o-background-size:100% 100%;
 }
 /*nav bars*/
@@ -27,11 +27,11 @@ nav li{
 }
 nav li a, nav li a:visited{
     text-decoration:none;
-    color: #C64322;
+    color: purple;
     padding:0.3em 0.6em;
 }
 nav li a:hover {
-    color: #C64322;
+    color: purple;
     background-color: rgba(252,251,243,0.75);
 }
 
@@ -41,31 +41,41 @@ header h1{
     font-size: 8.5em;
     letter-spacing: -0.025em;
     margin: 0;
-    text-align: center;
+    text-align:left;
 }
 header h2{
+    font-family:fantasy;
     font-weight: 300;
     font-size: 3.8em;
     color: darkblue;
     margin: -0.4em 0 0 0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    text-align: center;
+    text-align: left;
 }
 
-
-section .pane1{
-    background-color:turquoise;
-    width: 400px;
-    height: 200px;
-    margin:0 0 2.0em;
+section #main{
+    background-color: teal;
+    margin: 0 0 0 2.0em;
     padding:1.5em 0 2.0em 1.5em;
     display:inline-block;
     border-radius:2em;
-    border-width: 10px;
-    border-color: black;
-    align-self: center;
+}
+section div.pane1{
+    background-color:rgb(0, 83, 139);
+  /*  width: 100%;
+    height: 100%;*/
+    float:left;
+    position:relative;
+    width: 300;
+    margin:0 0 2.0em;
+    padding:1.5em 0 2.0em 1.5em;
+    border-radius:0.6em;
+    border: black solid 1px;    
+}
+section div.panel img.axolotlType{
     
+    width:100%;
 }
 
 /*nav bars*/
@@ -94,7 +104,7 @@ section .pane1{
      background-color: rgba(252,251,243,0.75);
  }
  nav#utilityMenu{
-    float: right;
+    float:left;
     margin: -1.5em 0 0 0;
     padding:0.35em;
     background-color: rgba(64,54,47,0.8);
@@ -127,3 +137,14 @@ nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::befor
     color: #FCFBE6;
 }
 
+section#sidebar {
+    width: 238px;
+    height: 100%;
+    float:left;
+    position:relative;
+    display:block;
+    background-color: rgb(0, 0, 0);
+    margin:1.5em 0 3.0em 1.5em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-right: teal solid 5px;
+}
